@@ -1,6 +1,6 @@
 const movieListElement = document.querySelector('.movieListElement')
 function getMovies(inputString) {
-  return fetch(`http://www.omdbapi.com/?s=${inputString}&apikey=26dfa6bb`)
+  return fetch(`https://www.omdbapi.com/?s=${inputString}&apikey=26dfa6bb`)
     .then(Response => {
       console.log(Response);
       return Response.json();
@@ -11,7 +11,7 @@ function getMovies(inputString) {
 }
 
 function getMovieDetails(id) {
-  return fetch(`http://www.omdbapi.com/?i=${id}&apikey=26dfa6bb`)
+  return fetch(`https://www.omdbapi.com/?i=${id}&apikey=26dfa6bb`)
     .then(Response => {
       console.log(Response);
       return Response.json();
