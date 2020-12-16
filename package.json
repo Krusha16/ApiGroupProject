@@ -1,0 +1,22 @@
+{
+  "name": "apigrpproject",
+  "version": "1.0.0",
+  "description": "grpproject",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Krusha16/ApiGroupProject.git"
+  },
+  "author": "krusha patel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Krusha16/ApiGroupProject/issues"
+  },
+  "homepage": "https://github.com/Krusha16/ApiGroupProject#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
+}
