@@ -1,0 +1,28 @@
+body{
+  background-color: black;
+  color: white;
+}
+
+header{
+  text-align: center;
+}
+
+#logo {
+  color: red;
+  font-size: 60px;
+}
+
+input{
+  border: 2px solid red;
+  border-radius: 10px;
+  color: white;
+  background-color: black;
+  width: 50%;
+  padding: 10px;
+  margin: 20px;
+}
+
+.movieListElement li {
+  list-style-type: none;
+  display: inline-flex;
+}
