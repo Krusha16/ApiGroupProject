@@ -25,4 +25,39 @@ input{
 .movieListElement li {
   list-style-type: none;
   display: inline-flex;
+  width: 30%;
+  position: relative;
 }
+
+.photo-container {
+  position: relative;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute; 
+  top: 0; 
+  background: rgba(0, 0, 0, 0.5);
+  width: 90%;
+  height: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  padding: 20px;
+  text-align: left;
+  font-size: 20px;
+}
+
+.photo-container:hover .overlay {
+  opacity: 1;
+}
+
+.title {
+  font-size: 30px;
+}
+
+
