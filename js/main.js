@@ -1,6 +1,6 @@
 const movieListElement = document.querySelector('.movieListElement')
 function getMovies(inputString) {
-  return fetch(`http://www.omdbapi.com/?s=${inputString}&apikey=26dfa6bb`)
+  return fetch(`https://www.omdbapi.com/?s=${inputString}&apikey=26dfa6bb`)
     .then(Response => {
       console.log(Response);
       return Response.json();
