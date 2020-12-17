@@ -38,7 +38,7 @@ input{
 }
 
 .photo-container img {
-  transform: scale(0.9);
+  transform: scale(0.95);
   transition: .5s ease;
 }
 
