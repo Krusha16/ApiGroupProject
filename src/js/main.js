@@ -2,7 +2,6 @@ const movieListElement = document.querySelector('.movieListElement')
 function getMovies(inputString) {
   return fetch(`https://www.omdbapi.com/?s=${inputString}&apikey=26dfa6bb`)
     .then(Response => {
-      console.log(Response);
       return Response.json();
     })
     .catch(err => {
@@ -13,7 +12,6 @@ function getMovies(inputString) {
 function getMovieDetails(id) {
   return fetch(`https://www.omdbapi.com/?i=${id}&apikey=26dfa6bb`)
     .then(Response => {
-      console.log(Response);
       return Response.json();
     })
     .catch(err => {
@@ -30,11 +28,9 @@ function newSearch(e) {
       movieListElement.innerHTML = "";
       getMovies(input.value)
         .then(json => {
-          console.log(json);
           for (const movie of json.Search) {
             getMovieDetails(movie.imdbID)
               .then(json => {
-                console.log(json);
                 createAndInsertHTML(movie, json);
               })
           }
@@ -63,10 +59,3 @@ function createAndInsertHTML(movie, json) {
 </li>
 `)
 }
-
-
-  //   <div class="project-1 project">
-  //   <div class="overlay">
-  //     <a href="Projects/project2/index.html">VIEW PROJECT</a>
-  //   </div>
-  // </div>
