@@ -33,6 +33,15 @@ input{
   position: relative;
 }
 
+.photo-container:hover img {
+  transform: scale(1.2);
+}
+
+.photo-container img {
+  transform: scale(0.9);
+  transition: .5s ease;
+}
+
 .image {
   width: 100%;
   height: auto;
@@ -59,5 +68,3 @@ input{
 .title {
   font-size: 30px;
 }
-
-
